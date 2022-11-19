@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3049131714819384361}
   - component: {fileID: 3689084763387756954}
+  - component: {fileID: 7411981860646359697}
   m_Layer: 0
   m_Name: Ballista
   m_TagString: Untagged
@@ -47,6 +48,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weapon: {fileID: 3144582324300694500}
+  towerRange: 25
+  projectileParticles: {fileID: 4721969836993449336}
+--- !u!114 &7411981860646359697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3219458064393657486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6a5206cad0ba3b4182c112c51a61fe0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cost: 50
 --- !u!1 &3754209883292424629
 GameObject:
   m_ObjectHideFlags: 0
@@ -153,7 +169,7 @@ ParticleSystem:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  moveWithTransform: 0
+  moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
   randomSeed: 0
@@ -216,7 +232,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 30
+      scalar: 45
       minScalar: 5
       maxCurve:
         serializedVersion: 2
